@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Currency Converter</title>
+
+    <link rel="stylesheet" type="text/css" href="normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="calc.css"/>
+
+</head>
+<body>
+<header>Travel Rates</header>
+<br>
+
+    <div>
+        <input type = "text" id = "output" value="0">
+    </div>
+
+
+    <br id="buttonDiv">
+        <br>
+        <button id="sevenButton">7</button>
+        <button id="eightButton">8</button>
+        <button id="nineButton">9</button>
+    </br>
+
+    <br>
+        <button id="fourButton">4</button>
+        <button id="fiveButton">5</button>
+        <button id="sixButton">6</button>
+    </br>
+
+    <br>
+        <button id="oneButton">1</button>
+        <button id="twoButton">2</button>
+        <button id="threeButton">3</button>
+    </br>
+
+    <br>
+        <button id="clearButton">c</button>
+        <button id="zeroButton">0</button>
+        <button id="equalsButton">=</button>
+    </br>
+    </div>
+
+
+    <div>
+        <select class = homeSelectedCurrency>
+            <option value="GBP">GBP</option>
+            <option value="EUR">EUR</option>
+            <option value="USD">USD</option>
+            <option value="JPY">JPY</option>
+            <option selected="selected">
+                GBP
+            </option>
+        </select>
+    </div>
+
+    <div>
+        <select class = destinationSelectedCurrency>
+            <option value="GBP">GBP</option>
+            <option value="EUR">EUR</option>
+            <option value="USD">USD</option>
+            <option value="JPY">JPY</option>
+            <option selected="selected">
+                EUR
+            </option>
+        </select>
+    </div>
+
+
+</main>
+
+<footer>CC-By Gregor McIntyre 2019</footer>
+<script src="CurrencyModel.js"></script>
+<script src="CurrencyView.js"></script>
+<script src="CurrencyController.js"></script>
+</body>
+</html>
